@@ -3,7 +3,7 @@ function divisibleByLeft(n) {
     const digits = n.toString().split('');
     const result = [];
     digits.forEach((number, i) => {
-        if(((number / digits[i-1]) % 2) === 0) {
+        if(((number / digits[i-1]) % 1) === 0) {
             result.push(true);
         }else { 
             result.push(false);
